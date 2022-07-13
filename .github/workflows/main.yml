@@ -14,9 +14,6 @@ jobs:
 
     - name: CheckoutCode
       uses: actions/checkout@v2
-    
-    - name: Configure safe.directory  # Workaround permission issue
-      run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
     - name: EditorConfig-Action
       uses: FarzamMohammadi/EditorConfig-Action@master
